@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h1>HangMan Game</h1>
+        <div class="hangmanpic" ></div>
+        <div class="right">
+            <div class="text" id="text"></div>
+            <div class="hint" id="hint"></div>
+            <div class="buttons">
+                <button class="btns" >A</button>
+                <button class="btns" >B</button>
+                <button class="btns" >C</button>
+                <button class="btns" >D</button>
+                <button class="btns" >E</button>
+                <button class="btns" >F</button>
+                <button class="btns" >G</button>
+                <button class="btns" >H</button>
+                <button class="btns" >I</button>
+                <button class="btns" >J</button>
+                <button class="btns" >K</button>
+                <button class="btns" >L</button>
+                <button class="btns" >M</button>
+                <button class="btns" >N</button>
+                <button class="btns" >O</button>
+                <button class="btns" >P</button>
+                <button class="btns" >Q</button>
+                <button class="btns" >R</button>
+                <button class="btns" >S</button>
+                <button class="btns" >T</button>
+                <button class="btns" >U</button>
+                <button class="btns" >V</button>
+                <button class="btns" >W</button>
+                <button class="btns" >X</button>
+                <button class="btns" >Y</button>
+                <button class="btns" >Z</button>
+            </div>
+        </div>
+        <div class="restart"><button class="restartbtn" onclick="restart()">Restart</button></div>
+    </div>
+    <div class="scoreboard">
+    <div class="board" id="loose">
+        <div class="image"><img src="images/lost.gif" alt=""></div>
+        <h1>Game Over!</h1>
+        <br>
+        <div class="correctword"><p></p> </div>
+        <button onclick="restart()">Play Again</button>
+    </div>
+
+
+     <div class="board" id="win">
+        <div class="image"><img src="images/victory.gif" alt=""></div>
+        <h1>Congrats!</h1>
+        <br>
+        <div class="word"><p></p></div>
+        <button onclick="restart()">Play Again</button>
+    </div> 
+</div>
+    <script src="wordlist.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
